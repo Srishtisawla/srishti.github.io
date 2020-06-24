@@ -1,0 +1,250 @@
+body{
+    margin : 0;
+    
+    --sunSize : 25vh;
+}
+
+.container{
+    position: absolute;
+    width : 100vw;
+    height : auto;
+    display : flex;
+    flex-direction: column;
+    background-image: linear-gradient(#f3ac5e , #c779d0 , #4bc0c8);
+    
+
+}
+
+.container>div{
+    margin-bottom : 2vh;
+}
+
+.header{
+    height : 8vh;
+    width : 100vw;
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'B612', sans-serif;
+    background : url('../assets/icon.png'),linear-gradient(45deg,transparent 40%,white 40.1%,white 60%,transparent 60.1%),linear-gradient(135deg,#4bc0c8 40%,white 40.1%,white 60%,#4bc0c8 60.1%);
+    background-position: 50%,center;
+    background-size: 8vh,100% 100%,100% 100%;
+    background-repeat: no-repeat;
+}
+
+.srishti,.sawla{
+    width : 45vw;
+    line-height : 8vh;
+    color : #ffffff;
+    font-size : 5vmin;
+}
+
+.srishti{
+    text-align: left;
+    padding-left : 5vw;
+}
+.sawla{
+    text-align: right;
+    padding-right : 5vw;
+}
+
+.optBar{
+    width : 100vw;
+    height : 5vh;
+    display : flex;
+    justify-content: space-around;
+    font-family: 'B612', sans-serif;
+}
+
+.options{
+    font-size : 2vh;
+    line-height : 5vh;
+    text-align : center;
+    border : 1px solid black;
+    box-shadow: 5px 5px 0 black;
+    padding : 0vw 2vw;
+    text-decoration: none;
+    color : #f44336;
+}
+
+.title{
+    margin-top : 2vh;
+    width : 100vw;
+    height : 8vh;
+    line-height : 8vh;
+    text-align: center;
+    font-family: 'B612', sans-serif;
+    font-size : 6vmin;
+    border : 0px dashed #131313;
+    border-width : 5px 0 5px 0;
+}
+
+.intro,.outro{
+    /* margin-top : 5vh; */
+    width : 95vw;
+    padding : 1vh 2vw 1vh 2vw;
+    text-align : justify;
+    font-family: 'B612', sans-serif;
+}
+
+.intro{
+    text-align :left;
+}
+.outro{
+    text-align : right;
+}
+
+.introImage{
+    --size : 40vmin;
+    float: left;
+    height: var(--size);
+    width: var(--size);
+    shape-outside: circle();
+    clip-path: circle( 50% at 50% 50%);
+    margin: 4vmin;
+    background-image : url('../assets/hand.png');
+    background-size: contain;
+    animation : willy 1s linear infinite;
+}
+
+@keyframes willy{
+    50%{transform : rotate(-45deg);}
+}
+
+.introText,.outroText,.cintroText,.cstageText,.ctrickText,.cprestigeText,.csyllabusText,.cpricingText,.cenrollmentText,.ccontactText,.cscheduleText{
+    color : black;
+}
+
+.introText>p>span,.outroText>p>span,.cintroText>p>span,.cstageText>p>span,.ctrickText>p>span,.cprestigeText>p>span,.csyllabusText>p>span,.cpricingText>p>span,.cenrollmentText>p>span,.cscheduleText>p>span,.ccontactText>p>span{
+    font-weight : bold;
+    text-align : center;
+    color : #ffffff;
+}
+
+.outroImage{
+    --size : 40vmin;
+    float: right;
+    height: var(--size);
+    width: var(--size);
+    shape-outside: circle();
+    /* clip-path: circle( 50% at 50% 50%); */
+    margin: 4vmin;
+    background-image : url('../assets/rocket.png');
+    background-size: contain;
+    animation : nilly 0.2s linear infinite;
+}
+
+@keyframes nilly{
+    50%{transform : translate(4px,4px)}
+}
+
+
+.big{
+    font-size: 4vmin;
+}
+
+.cintroImage{
+    --size : 40vmin;
+    float: left;
+    height: var(--size);
+    width: var(--size);
+    shape-outside: circle();
+    clip-path: circle( 50% at 50% 50%);
+    margin: 4vmin;
+    background-image : url('../assets/three.png');
+    background-size: contain;
+    animation : silly 4s linear infinite;
+}
+
+@keyframes silly{
+    50%{transform : scale(1.2)}
+}
+
+.cstageImage{
+    --size : 40vmin;
+    float: right;
+    height: var(--size);
+    width: var(--size);
+    shape-outside: circle();
+    /* clip-path: circle( 50% at 50% 50%); */
+    margin: 7vmin;
+    background-image : url('../assets/stage.png');
+    background-size: contain;
+    /* animation : silly 4s linear infinite; */
+}
+
+.ctrickImage{
+    --size : 40vmin;
+    float: left;
+    height: var(--size);
+    width: var(--size);
+    shape-outside: circle();
+    /* clip-path: circle( 50% at 50% 50%); */
+    margin: 4vmin;
+    background-image : url('../assets/trick.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* animation : silly 4s linear infinite; */
+}
+
+.cprestigeImage{
+    --size : 40vmin;
+    float: right;
+    height: var(--size);
+    width: var(--size);
+    shape-outside: circle();
+    /* clip-path: circle( 50% at 50% 50%); */
+    margin: 4vmin;
+    background-image : url('../assets/prestige.png');
+    background-size: contain;
+    /* animation : silly 4s linear infinite; */
+}
+
+.cpricingImage{
+    --size : 30vmin;
+    float: left;
+    height: var(--size);
+    width: var(--size);
+    shape-outside: circle();
+    /* clip-path: circle( 50% at 50% 50%); */
+    margin: 4vmin;
+    background-image : url('../assets/pricing.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* animation : silly 4s linear infinite; */
+}
+
+.ccontactImage{
+    --size : 30vmin;
+    float: left;
+    height: var(--size);
+    width: var(--size);
+    shape-outside: circle();
+    /* clip-path: circle( 50% at 50% 50%); */
+    margin: 4vmin;
+    background-image : url('../assets/contact.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation : pilly 1s linear infinite;
+}
+
+@keyframes pilly{
+    50%{transform : rotate(15deg);}
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    .intro,.outro{
+        width : 64vw;
+        margin-left: 18vw;
+    }
+    p{
+        font-size : 3vmin;
+    }
+    .srishti,.sawla{
+        text-align : center;
+    }
+}
